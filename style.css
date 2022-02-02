@@ -23,15 +23,18 @@
 
 /* ----- Styles ----- */
 
-/* Visually hide associated icon span tags. These span elements are intended for screen readers. */
-/* Using this over aria-label element attribute, so screen reader aria support not required */
+/*
+  Hides an element, whilst keeping it available to assistive technologies
+  Refer to W3C:
+  https://www.w3.org/WAI/tutorials/forms/labels/#note-on-hiding-elements
+*/
 .screen-reader-only {
-  position: absolute;
+  border: 0;
+  clip: rect(0 0 0 0);
   height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
   width: 1px;
-  clip: rect(1px 1px 1px 1px); /* IE 6 and 7 */
-  clip: rect(1px,1px,1px,1px);
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  overflow: hidden !important;
 }

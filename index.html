@@ -94,6 +94,16 @@
             </a>
           </li>
         </ul>
+        <!-- See accessibility on toggle buttons at -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role#toggle_buttons -->
+        <button aria-pressed="false">
+          <i 
+            aria-hidden="true" 
+            class="fa fa-moon-o" 
+            title="enable dark mode"
+          ></i
+          ><span class="screen-reader-only">Enable Dark Mode</span>
+        </button>
       </nav>
     </header>
   </body>

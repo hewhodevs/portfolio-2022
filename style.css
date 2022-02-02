@@ -22,3 +22,9 @@
 }
 
 /* ----- Styles ----- */
+
+/* Visually hide associated icon span tags. These span elements are intended for screen readers. */
+.screen-reader-only {
+  visibility: hidden;
+}
+

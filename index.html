@@ -2,31 +2,57 @@
 <html lang="en">
   <!-- Start head -->
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--! displays site properly based on user's device -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--! Add a description -->
-    <meta name="description" content="Joshua Kelly Software Developer">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/faviconName.png">
+    <meta name="description" content="Joshua Kelly Software Developer" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/faviconName.png"
+    />
     <!--! Start CSS stylesheet loading to avoid render blocking -->
-      <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.removeAttribute('style');this.rel='stylesheet'">
-      <!-- No JS fallback -->
-      <noscript><link rel="stylesheet" href="/style.css"></noscript>
+    <link
+      rel="preload"
+      href="/style.css"
+      as="style"
+      onload="this.onload=null;this.removeAttribute('style');this.rel='stylesheet'"
+    />
+    <!-- No JS fallback -->
+    <noscript><link rel="stylesheet" href="/style.css" /></noscript>
     <!-- End CSS stylesheet loading -->
     <!--! Start Font loading to avoid render blocking -->
-      <!-- connect to domain of google font files -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <!-- optionally increase loading priority -->
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-      <!-- async CSS -->
-      <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-      <!-- Load font awesome icons v4.7.0 -->
-      <Link rel="stylesheet" href="./font-awesome.min.css"></Link>
-      <!-- no-JS fallback -->
-      <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-      </noscript>
+    <!-- connect to domain of google font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- optionally increase loading priority -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- async CSS -->
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <!-- Load font awesome icons v4.7.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- no-JS fallback -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      />
+    </noscript>
     <!-- End Font Loading  -->
     <!--! Import JavaScript Files, use defer attribute for best peformance -->
     <script defer src="/script.js"></script>
@@ -38,7 +64,37 @@
   <!-- Start body -->
   <body>
     <header>
-      <h1>Joshua Kelly Software Developer</h1>
+      <nav>
+        <h3>JK</h3>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- Icons -->
+          <li>
+            <a href="https://github.com/hewhodevs">
+              <!-- see accessibility on font awesome icons -->
+              <!-- https://fontawesome.com/v5.15/how-to-use/on-the-web/other-topics/accessibility -->
+              <i
+                aria-hidden="true"
+                class="fa fa-github-square"
+                title="Go to my GitHub profile page"
+              ></i
+              ><span class="screen-reader-only">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://au.linkedin.com/in/joshua-kelly-16a64153">
+              <i
+                aria-hidden="true"
+                class="fa fa-linkedin"
+                title="Go to my LinkedIn profile page"
+              ></i
+              ><span class="screen-reader-only">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   </body>
   <!-- End body -->

@@ -1,0 +1,24 @@
+/* ----- Global Variables ----- */
+:root {
+  /* ----- Fonts ----- */
+  --roboto-font-family: 'Roboto', sans-serif;
+
+  /* ----- Colors ----- */
+  /* 
+    Text readability contrast checks
+    BG: main (#FAFAFA), FG: secondary (#333)
+    contrast AAA passed (12.1 ratio)
+    greyscale rating passed (597 color diff) 
+  */
+  /* 
+    Headings & accent buttons readability contrast checks
+    BG: accent (#000) , FG: main (#FAFAFA)
+    contrast AAA passed (20.12 ratio)
+    greyscale rating passed (750 color diff)
+  */
+  --main-color: #fafafa;
+  --secondary-colof: #333;
+  --accent-color: #000;
+}
+
+/* ----- Styles ----- */

@@ -1,7 +1,14 @@
 /* ----- Global Variables ----- */
 :root {
   /* ----- Fonts ----- */
+  /* Google - Fonts Roboto */
   --roboto-font-family: 'Roboto', sans-serif;
+  --roboto-regular: 400;
+  --roboto-bold: 700;
+
+  /* Google Fonts - Source Code Pro */
+  --sourcecodepro-font-family: 'Source Code Pro', monospace;
+  --sourcecodepro-bold: 700;
 
   /* ----- Colors ----- */
   /* 

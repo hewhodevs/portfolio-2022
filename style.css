@@ -53,6 +53,9 @@ button {
 ul {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 
 /* navbar styles */
 #logo {
@@ -85,10 +88,13 @@ ul {
   background-color: var(--primary-color);
 }
 .menu a {
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: var(--roboto-font-family);
+  font-weight: var(--roboto-regular);
   border-bottom: 1px solid var(--secondary-color);
 }
 .menu.active {

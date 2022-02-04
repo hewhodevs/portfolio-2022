@@ -22,3 +22,20 @@
 }
 
 /* ----- Styles ----- */
+
+/* navbar styles */
+.menu-checkbox, .menu {
+  display: none;
+}
+.menu-toggle {
+  font-size: 16px;
+}
+.menu a {
+  display: block;
+}
+.menu.active {
+  display: block;
+}
+.menu-toggle:focus {
+  outline: 2px solid;
+}

@@ -17,25 +17,62 @@
     greyscale rating passed (750 color diff)
   */
   --main-color: #fafafa;
-  --secondary-colof: #333;
+  --secondary-color: #333;
   --accent-color: #000;
 }
 
 /* ----- Styles ----- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+h3 {
+  font-size: 2em;
+}
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
 
 /* navbar styles */
+.navbar-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 4rem;
+}
+.menu {
+  position: absolute;
+  top: 4rem;
+  width: 100vw;
+}
 .menu-checkbox, .menu {
   display: none;
 }
 .menu-toggle {
-  font-size: 16px;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  /* right align menu button in navbar-container which uses flex */
+  margin-left: auto;
+  background-color: var(--primary-color);
 }
 .menu a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--secondary-color);
 }
 .menu.active {
   display: block;
-}
-.menu-toggle:focus {
-  outline: 2px solid;
+  border-top: 1px solid var(--secondary-color);
 }

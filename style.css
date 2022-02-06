@@ -78,7 +78,6 @@ a {
   transition: height 0.3s ease-in;
 }
 .menu.active {
-  display: block;
   height: 280px;
   transition: height 0.3s ease-out;
 }

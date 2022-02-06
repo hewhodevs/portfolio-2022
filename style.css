@@ -73,8 +73,16 @@ a {
   width: 100%;
   position: absolute;
   top: 4rem;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in;
 }
-.menu-checkbox, .menu {
+.menu.active {
+  display: block;
+  height: 281px;
+  transition: height 0.3s ease-out;
+}
+.menu-checkbox {
   display: none;
 }
 .menu-toggle {
@@ -88,16 +96,13 @@ a {
   background-color: var(--primary-color);
 }
 .menu a {
-  padding: 20px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   font-family: var(--roboto-font-family);
   font-weight: var(--roboto-regular);
-  border-bottom: 1px solid var(--secondary-color);
-}
-.menu.active {
-  display: block;
-  border-top: 1px solid var(--secondary-color);
+  background-color: var(--accent-color);
+  color: var(--main-color);
 }

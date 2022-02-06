@@ -79,7 +79,7 @@ a {
 }
 .menu.active {
   display: block;
-  height: 281px;
+  height: 280px;
   transition: height 0.3s ease-out;
 }
 .menu-checkbox {
@@ -105,4 +105,7 @@ a {
   font-weight: var(--roboto-regular);
   background-color: var(--accent-color);
   color: var(--main-color);
+}
+.menu a:hover {
+  background: var(--secondary-color);
 }

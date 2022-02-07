@@ -84,7 +84,7 @@ a {
     + 5px x 4 bottom margin li container
     = 320px total menu height.
   */
-  height: 320px;
+  height: 400px;
   width: 100%;
   position: absolute;
   top: 4rem;
@@ -117,8 +117,11 @@ a {
 }
 
 .menu li {
-  padding: 5px;
+  padding: 5px 5px 0px 5px;
   background-color: var(--accent-color);
+}
+.menu li:last-child {
+  padding-bottom: 5px;
 }
 
 .menu a {

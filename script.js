@@ -19,6 +19,7 @@ navMenuButton.addEventListener('click', () => {
     navMenu.classList.remove('hidden');
     setTimeout(function () {
       navMenu.classList.remove('visuallyhidden');
+      navMenu.setAttribute("aria-expanded", true);
     }, 20);
   } else {
     // Hide nav menu
@@ -27,6 +28,7 @@ navMenuButton.addEventListener('click', () => {
     navMenu.classList.add('visuallyhidden');    
     navMenu.addEventListener('transitionend', (e) => {
       navMenu.classList.add('hidden');
+      navMenu.setAttribute("aria-expanded", false);
     }, {
       capture: false,
       once: true,

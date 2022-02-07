@@ -26,6 +26,9 @@
   --primary-color: #fafafa;
   --secondary-color: #333;
   --accent-color: #000;
+
+  /* ----- element height variables ----- */
+  --navbar-height: 4rem;
 }
 
 /* ----- Styles ----- */
@@ -41,6 +44,7 @@ body {
   overflow-x: hidden;
   background-color: var(--primary-color);
 }
+
 
 section {
   width: 100%;
@@ -86,7 +90,10 @@ a {
   display: flex;
   justify-content: start;
   align-items: center;
-  height: 4rem;
+  height: var(--navbar-height);
+  position: fixed;
+  top: 0;
+  background-color: var(--primary-color);
 }
 
 .menu {
